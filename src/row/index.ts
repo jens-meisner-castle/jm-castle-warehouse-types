@@ -24,7 +24,7 @@ export interface Row_Receipt {
   article_id: string;
   count: number;
   by: EmployeeId;
-  at: Date;
+  at: number;
 }
 
 export interface Row_Emission {
@@ -32,5 +32,5 @@ export interface Row_Emission {
   article_id: string;
   count: number;
   by: EmployeeId;
-  at: Date;
+  at: number;
 }
