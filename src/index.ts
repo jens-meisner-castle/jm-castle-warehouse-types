@@ -1,9 +1,23 @@
 import { Table, TableStatus } from "./database/index.js";
+import {
+  PersistentRow,
+  Row_Article,
+  Row_Emission,
+  Row_Receipt,
+  Row_Store,
+  Row_StoreSection,
+} from "./row/index.js";
 import { SystemSetupStatus } from "./system/index.js";
-import { PersistentRow, Row_Store, Row_StoreSection } from "./row/index.js";
 
 export { Table, TableStatus, SystemSetupStatus };
-export { PersistentRow, Row_Store, Row_StoreSection };
+export {
+  PersistentRow,
+  Row_Store,
+  Row_StoreSection,
+  Row_Article,
+  Row_Emission,
+  Row_Receipt,
+};
 
 export type AnyDate = Date;
 export type AnyNumber = number;
