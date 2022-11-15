@@ -44,6 +44,18 @@ export const ValueTypes = {
 
 export type LuxonKey = "millisecond" | "second" | "minute" | "hour" | "day";
 
+export const CountUnits = {
+  piece: { id: "piece", name: "Stück", cat: "count" },
+  m: { id: "m", name: "Meter", cat: "distance" },
+  kg: { id: "kg", name: "Kilogramm", cat: "weight" },
+  l: { id: "l", name: "Liter", cat: "volume" },
+};
+
+export type CountUnit = keyof typeof CountUnits;
+
+export const isCountUnit = (s: string): s is CountUnit =>
+  !!CountUnits[s as CountUnit];
+
 export const DurationUnits = {
   ms: {
     id: "ms",
@@ -125,13 +137,13 @@ export type SelectResponse<R> =
 export type PersistentRow = Record<string, unknown>;
 
 export interface Row_Store extends PersistentRow {
-  store_id: string
+  store_id: string;
   name: string;
 }
 
 export interface Row_StoreSection extends PersistentRow {
-  store_id: string
-  section_id: string
+  store_id: string;
+  section_id: string;
   name: string;
 }
 
@@ -150,7 +162,7 @@ export interface SerializableService {
 }
 
 export const PersistenceAreas = {
-  "store": "Lager",
+  store: "Lager",
   "store-section": "Sektion / Abschnitt in einem Lager",
 };
 
