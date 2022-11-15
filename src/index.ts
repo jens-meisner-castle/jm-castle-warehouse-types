@@ -1,7 +1,9 @@
 import { Table, TableStatus } from "./database/index.js";
 import { SystemSetupStatus } from "./system/index.js";
+import { PersistentRow, Row_Store, Row_StoreSection } from "./row/index.js";
 
 export { Table, TableStatus, SystemSetupStatus };
+export { PersistentRow, Row_Store, Row_StoreSection };
 
 export type AnyDate = Date;
 export type AnyNumber = number;
@@ -133,20 +135,6 @@ export type SelectResponse<R> =
       error: string;
       errorDetails?: Record<string, unknown>;
     };
-
-export type PersistentRow = Record<string, unknown>;
-
-export interface Row_Store extends PersistentRow {
-  store_id: string;
-  name: string;
-}
-
-export interface Row_StoreSection extends PersistentRow {
-  store_id: string;
-  section_id: string;
-  name: string;
-}
-
 export interface QueryParametersSchema {
   type: "object";
   properties: Record<string, unknown>;
