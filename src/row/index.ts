@@ -3,23 +3,27 @@ export type PersistentRow = Record<string, unknown>;
 export interface Row_Store extends PersistentRow {
   store_id: string;
   name: string;
+  dataset_version: number;
 }
 
 export interface Row_StoreSection extends PersistentRow {
   store_id: string;
   section_id: string;
   name: string;
+  dataset_version: number;
 }
 
 export interface Row_Article {
   article_id: string;
   name: string;
   count_unit: string;
+  dataset_version: number;
 }
 
 export type EmployeeId = string;
 
 export interface Row_Receipt {
+  dataset_id: number;
   section_id: string;
   article_id: string;
   count: number;
@@ -28,6 +32,7 @@ export interface Row_Receipt {
 }
 
 export interface Row_Emission {
+  dataset_id: number;
   section_id: string;
   article_id: string;
   count: number;
