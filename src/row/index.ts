@@ -13,7 +13,7 @@ export interface Row_StoreSection extends PersistentRow {
   dataset_version: number;
 }
 
-export interface Row_Article {
+export interface Row_Article extends PersistentRow {
   article_id: string;
   name: string;
   count_unit: string;
@@ -22,7 +22,7 @@ export interface Row_Article {
 
 export type EmployeeId = string;
 
-export interface Row_Receipt {
+export interface Row_Receipt extends PersistentRow {
   dataset_id: number;
   section_id: string;
   article_id: string;
@@ -31,7 +31,7 @@ export interface Row_Receipt {
   at: number;
 }
 
-export interface Row_Emission {
+export interface Row_Emission extends PersistentRow {
   dataset_id: number;
   section_id: string;
   article_id: string;
