@@ -25,7 +25,7 @@ export interface Row_Article {
 export type EmployeeId = string;
 
 export interface Row_Receipt {
-  dataset_id: number;
+  dataset_id: number | "new";
   section_id: string;
   article_id: string;
   article_count: number;
@@ -34,7 +34,7 @@ export interface Row_Receipt {
 }
 
 export interface Row_Emission {
-  dataset_id: number;
+  dataset_id: number | "new";
   section_id: string;
   article_id: string;
   article_count: number;
