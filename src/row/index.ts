@@ -1,3 +1,5 @@
+import { CountUnit } from "..";
+
 export type PersistentRow = Record<string, unknown>;
 
 export interface Row_Store extends PersistentRow {
@@ -16,7 +18,7 @@ export interface Row_StoreSection extends PersistentRow {
 export interface Row_Article extends PersistentRow {
   article_id: string;
   name: string;
-  count_unit: string;
+  count_unit: CountUnit;
   dataset_version: number;
 }
 
