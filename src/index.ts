@@ -158,7 +158,7 @@ export interface QueryParametersSchema {
 export interface SerializableService {
   url: string;
   parameters?: QueryParametersSchema;
-  method?: "GET";
+  method?: "GET" | "POST";
   name: string;
   scope?: "public" | "private";
 }
