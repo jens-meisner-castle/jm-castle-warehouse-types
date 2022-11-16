@@ -26,16 +26,16 @@ export interface Row_Receipt extends PersistentRow {
   dataset_id: number;
   section_id: string;
   article_id: string;
-  count: number;
-  by: EmployeeId;
-  at: number;
+  article_count: number;
+  by_user: EmployeeId;
+  at_seconds: number;
 }
 
 export interface Row_Emission extends PersistentRow {
   dataset_id: number;
   section_id: string;
   article_id: string;
-  count: number;
-  by: EmployeeId;
-  at: number;
+  article_count: number;
+  by_user: EmployeeId;
+  at_seconds: number;
 }
