@@ -126,29 +126,6 @@ export type SystemControlResponse =
   | { success: true; error?: never }
   | { success: false; error: string };
 
-export type InsertResponse =
-  | {
-      result: { cmd: string; affectedRows: number };
-      error?: never;
-      errorDetails?: never;
-    }
-  | {
-      result?: never;
-      error: string;
-      errorDetails?: Record<string, unknown>;
-    };
-
-export type SelectResponse<R> =
-  | {
-      result: { cmd: string; rows: R[] };
-      error?: never;
-      errorDetails?: never;
-    }
-  | {
-      result?: never;
-      error: string;
-      errorDetails?: Record<string, unknown>;
-    };
 export interface QueryParametersSchema {
   type: "object";
   properties: Record<string, unknown>;
