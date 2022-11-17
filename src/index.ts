@@ -1,4 +1,9 @@
-import { Table, TableStatus } from "./database/index.js";
+import {
+  InsertResponse,
+  SelectResponse,
+  Table,
+  TableStatus,
+} from "./database/index.js";
 import {
   PersistentRow,
   Row_Article,
@@ -9,7 +14,13 @@ import {
 } from "./row/index.js";
 import { SystemSetupStatus } from "./system/index.js";
 
-export { Table, TableStatus, SystemSetupStatus };
+export {
+  Table,
+  TableStatus,
+  SystemSetupStatus,
+  InsertResponse,
+  SelectResponse,
+};
 export {
   PersistentRow,
   Row_Store,
