@@ -9,6 +9,7 @@ import {
   PersistentRow,
   Row_Article,
   Row_Emission,
+  Row_Masterdata,
   Row_Receipt,
   Row_Store,
   Row_StoreSection,
@@ -30,6 +31,7 @@ export {
   Row_Article,
   Row_Emission,
   Row_Receipt,
+  Row_Masterdata,
 };
 
 export type AnyDate = Date;

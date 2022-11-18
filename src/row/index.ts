@@ -2,24 +2,27 @@ import { CountUnit } from "..";
 
 export type PersistentRow = Record<string, unknown>;
 
-export interface Row_Store {
-  store_id: string;
-  name: string;
+export interface Row_Masterdata {
   dataset_version: number;
+  created_at: number;
+  edited_at: number;
 }
 
-export interface Row_StoreSection {
+export interface Row_Store extends Row_Masterdata {
+  store_id: string;
+  name: string;
+}
+
+export interface Row_StoreSection extends Row_Masterdata {
   store_id: string;
   section_id: string;
   name: string;
-  dataset_version: number;
 }
 
-export interface Row_Article {
+export interface Row_Article extends Row_Masterdata {
   article_id: string;
   name: string;
   count_unit: CountUnit;
-  dataset_version: number;
 }
 
 export type EmployeeId = string;
