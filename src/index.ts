@@ -3,6 +3,7 @@ import {
   SelectResponse,
   Table,
   TableStatus,
+  UpdateResponse,
 } from "./database/index.js";
 import {
   PersistentRow,
@@ -20,6 +21,7 @@ export {
   SystemSetupStatus,
   InsertResponse,
   SelectResponse,
+  UpdateResponse,
 };
 export {
   PersistentRow,
