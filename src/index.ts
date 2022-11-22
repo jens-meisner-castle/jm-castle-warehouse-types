@@ -9,6 +9,7 @@ import {
   PersistentRow,
   Row_Article,
   Row_Emission,
+  Row_Image,
   Row_Masterdata,
   Row_Receipt,
   Row_Store,
@@ -26,6 +27,7 @@ export {
 };
 export {
   PersistentRow,
+  Row_Image,
   Row_Store,
   Row_StoreSection,
   Row_Article,
