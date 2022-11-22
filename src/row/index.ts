@@ -14,6 +14,11 @@ export interface Row_Image extends Row_Masterdata {
   image_extension: string;
 }
 
+export interface Row_ImageContent {
+  image_id: string;
+  image_url: string;
+}
+
 export interface Row_Store extends Row_Masterdata {
   store_id: string;
   name: string;
@@ -29,6 +34,7 @@ export interface Row_Article extends Row_Masterdata {
   article_id: string;
   name: string;
   count_unit: CountUnit;
+  article_img_ref: string;
 }
 
 export type EmployeeId = string;
