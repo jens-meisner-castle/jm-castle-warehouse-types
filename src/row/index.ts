@@ -12,7 +12,6 @@ export interface Row_Image extends Row_Masterdata {
   image_id: string;
   reference: string;
   image_extension: string;
-  image_bytes: number[];
 }
 
 export interface Row_Store extends Row_Masterdata {
