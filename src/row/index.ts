@@ -8,7 +8,7 @@ export interface Row_Masterdata {
   edited_at: number;
 }
 
-export interface Row_Image extends Row_Masterdata {
+export interface Row_ImageReference extends Row_Masterdata {
   image_id: string;
   reference: string;
   image_extension: string;
