@@ -35,7 +35,7 @@ export interface Row_Article extends Row_Masterdata {
   article_id: string;
   name: string;
   count_unit: CountUnit;
-  article_img_ref: string | undefined;
+  article_img_ref: string | null;
 }
 
 export type EmployeeId = string;
