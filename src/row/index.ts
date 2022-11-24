@@ -15,7 +15,6 @@ export interface Row_ImageReference extends Row_Masterdata {
 
 export interface Row_ImageContent {
   image_id: string;
-  image_url: string;
   image_extension: string;
   size_in_bytes: number;
 }
