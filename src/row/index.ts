@@ -13,7 +13,7 @@ export interface Row_ImageReference extends Row_Masterdata {
   reference: string;
 }
 
-export interface Row_ImageContent {
+export interface Row_ImageContent extends Row_Masterdata {
   image_id: string;
   image_extension: string;
   size_in_bytes: number;
