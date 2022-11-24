@@ -192,10 +192,16 @@ export interface SystemSpec {
   name?: string;
 }
 
+export interface FilesystemStoreSpec {
+  type: "file-system";
+  path: string;
+}
+
 export interface Configuration {
   system?: SystemSpec;
   persistence: Record<string, PersistenceSpec>;
   mail: Record<string, MailingSpec>;
+  imageStore: FilesystemStoreSpec;
 }
 
 export interface CheckedConfiguration extends Configuration {
