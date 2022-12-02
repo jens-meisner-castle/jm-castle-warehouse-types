@@ -199,6 +199,10 @@ export interface SystemSpec {
   };
 }
 
+export interface ImageStoreSpec {
+  maxWidth: number;
+  maxHeight: number;
+}
 export interface FilesystemStoreSpec {
   type: "file-system";
   path: string;
@@ -208,7 +212,7 @@ export interface Configuration {
   system: SystemSpec;
   persistence: Record<string, PersistenceSpec>;
   mail: Record<string, MailingSpec>;
-  imageStore: FilesystemStoreSpec;
+  imageStore: FilesystemStoreSpec & ImageStoreSpec;
 }
 
 export interface CheckedConfiguration extends Configuration {
