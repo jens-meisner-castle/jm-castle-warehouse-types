@@ -192,6 +192,11 @@ export interface SystemSpec {
   name?: string;
   host: string;
   port: number;
+  certs: {
+    ca: string;
+    hostCert: string;
+    hostKey: string;
+  };
 }
 
 export interface FilesystemStoreSpec {
