@@ -190,6 +190,8 @@ export type MailingSpec = {
 
 export interface SystemSpec {
   name?: string;
+  host: string;
+  port: number;
 }
 
 export interface FilesystemStoreSpec {
@@ -198,7 +200,7 @@ export interface FilesystemStoreSpec {
 }
 
 export interface Configuration {
-  system?: SystemSpec;
+  system: SystemSpec;
   persistence: Record<string, PersistenceSpec>;
   mail: Record<string, MailingSpec>;
   imageStore: FilesystemStoreSpec;
