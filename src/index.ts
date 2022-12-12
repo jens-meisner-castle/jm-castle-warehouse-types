@@ -227,3 +227,5 @@ export interface SystemStatus {
     valid: CheckedConfiguration;
   };
 }
+
+export type UserRole = "admin" | "internal" | "external" 
