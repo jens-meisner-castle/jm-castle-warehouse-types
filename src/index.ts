@@ -254,3 +254,21 @@ export interface SystemStatus {
     valid: CheckedConfiguration;
   };
 }
+
+export type LoginResult =
+  | {
+      token: string;
+      expiresAtMs: number;
+      expiresAtDisplay: string;
+      roles: string[];
+      username: string;
+      error?: never;
+    }
+  | {
+      token?: never;
+      expiresAtMs?: never;
+      expiresAtDisplay?: never;
+      roles?: never;
+      username?: never;
+      error: string;
+    };
