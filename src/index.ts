@@ -157,6 +157,7 @@ export interface SerializableService {
   method?: "GET" | "POST";
   name: string;
   scope?: "public" | "private";
+  neededRole: string;
 }
 
 export const PersistenceAreas = {
