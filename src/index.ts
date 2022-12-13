@@ -208,7 +208,13 @@ export interface FilesystemStoreSpec {
   path: string;
 }
 
-export type UserRole = "admin" | "internal" | "external";
+export const UserRoles = {
+  admin: { description: "Needed to do system setup." },
+  internal: { description: "Needed to edit masterdata." },
+  external: { description: "Basic or minimum role to get access." },
+};
+
+export type UserRole = keyof typeof UserRoles;
 
 export const isUserRole = (s: string): s is UserRole => {
   switch (s) {
