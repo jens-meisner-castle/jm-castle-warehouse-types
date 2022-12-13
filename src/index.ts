@@ -3,7 +3,7 @@ import {
   SelectResponse,
   Table,
   TableStatus,
-  UpdateResponse
+  UpdateResponse,
 } from "./database/index.js";
 import {
   PersistentRow,
@@ -14,7 +14,7 @@ import {
   Row_Masterdata,
   Row_Receipt,
   Row_Store,
-  Row_StoreSection
+  Row_StoreSection,
 } from "./row/index.js";
 import { SystemSetupStatus } from "./system/index.js";
 
@@ -208,18 +208,29 @@ export interface FilesystemStoreSpec {
   path: string;
 }
 
-export type UserRole = "admin" | "internal" | "external"
+export type UserRole = "admin" | "internal" | "external";
+
+export const isUserRole = (s: string): s is UserRole => {
+  switch (s) {
+    case "admin":
+    case "internal":
+    case "external":
+      return true;
+    default:
+      return false;
+  }
+};
 
 export interface UserSettings {
-  password: string
-  roles: UserRole[]
+  password: string;
+  roles: UserRole[];
 }
 
-export type DefaultUserSpec = Record<string, UserSettings>
+export type DefaultUserSpec = Record<string, UserSettings>;
 
 export interface Configuration {
   system: SystemSpec;
-  user?: DefaultUserSpec
+  user?: DefaultUserSpec;
   persistence: Record<string, PersistenceSpec>;
   mail: Record<string, MailingSpec>;
   imageStore: FilesystemStoreSpec & ImageStoreSpec;
