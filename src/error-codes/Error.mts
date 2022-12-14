@@ -3,6 +3,10 @@ export const ErrorCodes = {
     name: "UnknownError",
     description: "Used, if a new or unknwon error name was used.",
   },
+  "40001": {
+    name: "BadRequestMissingParameter",
+    description: "One or more needed parameters are undefined.",
+  },
   "40101": {
     name: "TokenUndefinedError",
     description: "Token not specified in request.",
@@ -21,10 +25,11 @@ export const ErrorCodes = {
 /**
  * Explizit referenzierte Fehler
  */
-export const DevErrorCode = "77701";
-export const TokenUndefinedErrorCode = "40101";
 export const UnknownErrorCode = "-1";
+export const BadRequestMissingParameterCode = "40001";
+export const TokenUndefinedErrorCode = "40101";
 export const CastleConfigErrorCode = "66601";
+export const DevErrorCode = "77701";
 
 export type ErrorCode = keyof typeof ErrorCodes;
 
