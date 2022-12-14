@@ -5,6 +5,7 @@ import {
   TableStatus,
   UpdateResponse,
 } from "./database/index.js";
+import { ErrorCode, ErrorCodes, NameToCodeMap } from "./error-codes/index.js";
 import {
   PersistentRow,
   Row_Article,
@@ -18,6 +19,7 @@ import {
 } from "./row/index.js";
 import { SystemSetupStatus } from "./system/index.js";
 
+export { ErrorCode, ErrorCodes, NameToCodeMap };
 export {
   Table,
   TableStatus,
