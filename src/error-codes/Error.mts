@@ -29,6 +29,12 @@ export const ErrorCodes = {
     description: "This should not happen. Needs a software update.",
     apiStatus: 500,
   },
+  "88801": {
+    name: "SqlDataError",
+    description:
+      "Used for bad data. Original error comes from DB Server. Check error no in error message.",
+    apiStatus: 500,
+  },
 };
 
 /**
@@ -40,6 +46,7 @@ export const TokenUndefinedErrorCode = "40101";
 export const TokenExpiredErrorCode = "40102";
 export const CastleConfigErrorCode = "66601";
 export const DevErrorCode = "77701";
+export const SqlDataErrorCode = "88801";
 
 export type ErrorCode = keyof typeof ErrorCodes;
 
@@ -56,3 +63,5 @@ export const getErrorCode = (name: string): ErrorCode =>
   NameToCodeMap[name] || "-1";
 
 export const getApiStatus = (code: ErrorCode) => ErrorCodes[code].apiStatus;
+
+export const getSqlErrorCode = (errno: number) => `sql-${errno}`;

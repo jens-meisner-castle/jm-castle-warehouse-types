@@ -7,6 +7,7 @@ import {
   getApiStatus,
   getErrorCode,
   NameToCodeMap,
+  SqlDataErrorCode,
   TokenExpiredErrorCode,
   TokenUndefinedErrorCode,
   UnknownErrorCode,
@@ -24,4 +25,5 @@ export {
   TokenUndefinedErrorCode,
   TokenExpiredErrorCode,
   CastleConfigErrorCode,
+  SqlDataErrorCode,
 };
