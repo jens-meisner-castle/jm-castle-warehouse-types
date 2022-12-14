@@ -1,8 +1,19 @@
 import {
+  DevErrorCode,
   ErrorCode,
   ErrorCodes,
   getErrorCode,
   NameToCodeMap,
+  TokenUndefinedErrorCode,
+  UnknownErrorCode,
 } from "./Error.mjs";
 
-export { ErrorCode, ErrorCodes, NameToCodeMap, getErrorCode };
+export {
+  ErrorCode,
+  ErrorCodes,
+  NameToCodeMap,
+  getErrorCode,
+  DevErrorCode,
+  UnknownErrorCode,
+  TokenUndefinedErrorCode,
+};

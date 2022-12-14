@@ -1,6 +1,6 @@
 export const ErrorCodes = {
   "-1": {
-    name: "Unknown error",
+    name: "UnknownError",
     description: "Used, if a new or unknwon error name was used.",
   },
   "40101": {
@@ -13,6 +13,13 @@ export const ErrorCodes = {
     description: "This should not happen. Needs a software update.",
   },
 };
+
+/**
+ * Explizit referenzierte Fehler
+ */
+export const DevErrorCode = "77701";
+export const TokenUndefinedErrorCode = "40101";
+export const UnknownErrorCode = "-1";
 
 export type ErrorCode = keyof typeof ErrorCodes;
 

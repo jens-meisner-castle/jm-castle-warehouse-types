@@ -7,10 +7,13 @@ import {
   UpdateResponse,
 } from "./database/index.js";
 import {
+  DevErrorCode,
   ErrorCode,
   ErrorCodes,
   getErrorCode,
   NameToCodeMap,
+  TokenUndefinedErrorCode,
+  UnknownErrorCode,
 } from "./error-codes/index.js";
 import {
   PersistentRow,
@@ -25,7 +28,15 @@ import {
 } from "./row/index.js";
 import { SystemSetupStatus } from "./system/index.js";
 
-export { ErrorCode, ErrorCodes, NameToCodeMap, getErrorCode };
+export {
+  ErrorCode,
+  ErrorCodes,
+  NameToCodeMap,
+  getErrorCode,
+  DevErrorCode,
+  UnknownErrorCode,
+  TokenUndefinedErrorCode,
+};
 export {
   Table,
   TableStatus,
