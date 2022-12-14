@@ -1,5 +1,7 @@
 export const ErrorCodes = {
-  "40101": { name: "TokenExpiredError" },
+  "-1": { name: "Unknown error" },
+  "40101": { name: "TokenUndefinedError" },
+  "40102": { name: "TokenExpiredError" },
 };
 
 export type ErrorCode = keyof typeof ErrorCodes;
@@ -12,3 +14,5 @@ Object.keys(ErrorCodes).forEach((code: ErrorCode) => {
 });
 
 export const NameToCodeMap = newNameToCodeMap;
+
+export const getErrorCode = (name: string) => NameToCodeMap[name] || "-1";
