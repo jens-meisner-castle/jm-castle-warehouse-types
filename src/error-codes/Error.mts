@@ -2,23 +2,32 @@ export const ErrorCodes = {
   "-1": {
     name: "UnknownError",
     description: "Used, if a new or unknwon error name was used.",
+    apiStatus: 500,
   },
   "40001": {
     name: "BadRequestMissingParameter",
     description: "One or more needed parameters are undefined.",
+    apiStatus: 400,
   },
   "40101": {
     name: "TokenUndefinedError",
     description: "Token not specified in request.",
+    apiStatus: 401,
   },
-  "40102": { name: "TokenExpiredError", description: "Token is too old." },
+  "40102": {
+    name: "TokenExpiredError",
+    description: "Token is too old.",
+    apiStatus: 401,
+  },
   "66601": {
     name: "CastleConfigError",
     description: "Bad configuration of the castle system.",
+    apiStatus: 500,
   },
   "77701": {
     name: "DevError",
     description: "This should not happen. Needs a software update.",
+    apiStatus: 500,
   },
 };
 
@@ -42,4 +51,7 @@ Object.keys(ErrorCodes).forEach((code: ErrorCode) => {
 
 export const NameToCodeMap = newNameToCodeMap;
 
-export const getErrorCode = (name: string) => NameToCodeMap[name] || "-1";
+export const getErrorCode = (name: string): ErrorCode =>
+  NameToCodeMap[name] || "-1";
+
+export const getApiStatus = (code: ErrorCode) => ErrorCodes[code].apiStatus;
