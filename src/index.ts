@@ -1,3 +1,4 @@
+import { ApiServiceResponse } from "./api/index.mjs";
 import {
   InsertResponse,
   SelectResponse,
@@ -33,6 +34,7 @@ export {
   SelectResponse,
   UpdateResponse,
 };
+export { ApiServiceResponse };
 export {
   PersistentRow,
   Row_ImageReference,
