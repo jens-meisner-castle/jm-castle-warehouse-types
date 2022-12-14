@@ -7,6 +7,7 @@ import {
   UpdateResponse,
 } from "./database/index.js";
 import {
+  CastleConfigErrorCode,
   DevErrorCode,
   ErrorCode,
   ErrorCodes,
@@ -36,6 +37,7 @@ export {
   DevErrorCode,
   UnknownErrorCode,
   TokenUndefinedErrorCode,
+  CastleConfigErrorCode,
 };
 export {
   Table,

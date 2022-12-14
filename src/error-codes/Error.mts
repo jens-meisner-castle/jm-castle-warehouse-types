@@ -8,6 +8,10 @@ export const ErrorCodes = {
     description: "Token not specified in request.",
   },
   "40102": { name: "TokenExpiredError", description: "Token is too old." },
+  "66601": {
+    name: "CastleConfigError",
+    description: "Bad configuration of the castle system.",
+  },
   "77701": {
     name: "DevError",
     description: "This should not happen. Needs a software update.",
@@ -20,6 +24,7 @@ export const ErrorCodes = {
 export const DevErrorCode = "77701";
 export const TokenUndefinedErrorCode = "40101";
 export const UnknownErrorCode = "-1";
+export const CastleConfigErrorCode = "66601";
 
 export type ErrorCode = keyof typeof ErrorCodes;
 

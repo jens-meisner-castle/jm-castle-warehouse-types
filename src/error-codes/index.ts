@@ -1,4 +1,5 @@
 import {
+  CastleConfigErrorCode,
   DevErrorCode,
   ErrorCode,
   ErrorCodes,
@@ -16,4 +17,5 @@ export {
   DevErrorCode,
   UnknownErrorCode,
   TokenUndefinedErrorCode,
+  CastleConfigErrorCode,
 };
