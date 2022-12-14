@@ -1,3 +1,8 @@
-import { ErrorCode, ErrorCodes, NameToCodeMap } from "./Error.mjs";
+import {
+  ErrorCode,
+  ErrorCodes,
+  getErrorCode,
+  NameToCodeMap,
+} from "./Error.mjs";
 
-export { ErrorCode, ErrorCodes, NameToCodeMap };
+export { ErrorCode, ErrorCodes, NameToCodeMap, getErrorCode };
