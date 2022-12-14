@@ -1,3 +1,5 @@
+import { ErrorCode } from "../error-codes";
+
 export type ApiServiceResponse<T> =
   | {
       response: T;
@@ -8,6 +10,6 @@ export type ApiServiceResponse<T> =
   | {
       response?: never;
       error: string;
-      errorCode?: string;
+      errorCode?: ErrorCode;
       errorDetails?: Record<string, unknown>;
     };
