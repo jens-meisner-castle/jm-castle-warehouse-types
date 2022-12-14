@@ -7,6 +7,7 @@ import {
   UpdateResponse,
 } from "./database/index.js";
 import {
+  BadRequestMissingParameterCode,
   CastleConfigErrorCode,
   DevErrorCode,
   ErrorCode,
@@ -31,6 +32,7 @@ import {
 import { SystemSetupStatus } from "./system/index.js";
 
 export {
+  BadRequestMissingParameterCode,
   ErrorCode,
   ErrorCodes,
   NameToCodeMap,

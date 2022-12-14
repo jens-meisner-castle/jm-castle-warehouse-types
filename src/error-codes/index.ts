@@ -1,4 +1,5 @@
 import {
+  BadRequestMissingParameterCode,
   CastleConfigErrorCode,
   DevErrorCode,
   ErrorCode,
@@ -11,6 +12,7 @@ import {
 } from "./Error.mjs";
 
 export {
+  BadRequestMissingParameterCode,
   ErrorCode,
   ErrorCodes,
   NameToCodeMap,
