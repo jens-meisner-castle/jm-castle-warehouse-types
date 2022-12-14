@@ -1,3 +1,5 @@
+import { ErrorCode } from "../error-codes";
+
 export type InsertResponse<R> =
   | {
       result: { cmd: string; affectedRows: number; data: R };
@@ -8,7 +10,7 @@ export type InsertResponse<R> =
   | {
       result?: never;
       error: string;
-      errorCode?: string;
+      errorCode?: ErrorCode;
       errorDetails?: Record<string, unknown>;
     };
 
@@ -22,7 +24,7 @@ export type UpdateResponse<R> =
   | {
       result?: never;
       error: string;
-      errorCode?: string;
+      errorCode?: ErrorCode;
       errorDetails?: Record<string, unknown>;
     };
 
@@ -36,6 +38,6 @@ export type SelectResponse<R> =
   | {
       result?: never;
       error: string;
-      errorCode?: string;
+      errorCode?: ErrorCode;
       errorDetails?: Record<string, unknown>;
     };
