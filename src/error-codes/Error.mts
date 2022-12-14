@@ -37,6 +37,7 @@ export const ErrorCodes = {
 export const UnknownErrorCode = "-1";
 export const BadRequestMissingParameterCode = "40001";
 export const TokenUndefinedErrorCode = "40101";
+export const TokenExpiredErrorCode = "40102";
 export const CastleConfigErrorCode = "66601";
 export const DevErrorCode = "77701";
 

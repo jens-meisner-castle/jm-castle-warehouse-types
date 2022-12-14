@@ -15,6 +15,7 @@ import {
   getApiStatus,
   getErrorCode,
   NameToCodeMap,
+  TokenExpiredErrorCode,
   TokenUndefinedErrorCode,
   UnknownErrorCode,
 } from "./error-codes/index.js";
@@ -41,6 +42,7 @@ export {
   DevErrorCode,
   UnknownErrorCode,
   TokenUndefinedErrorCode,
+  TokenExpiredErrorCode,
   CastleConfigErrorCode,
 };
 export {

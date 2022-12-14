@@ -7,6 +7,7 @@ import {
   getApiStatus,
   getErrorCode,
   NameToCodeMap,
+  TokenExpiredErrorCode,
   TokenUndefinedErrorCode,
   UnknownErrorCode,
 } from "./Error.mjs";
@@ -21,5 +22,6 @@ export {
   DevErrorCode,
   UnknownErrorCode,
   TokenUndefinedErrorCode,
+  TokenExpiredErrorCode,
   CastleConfigErrorCode,
 };
