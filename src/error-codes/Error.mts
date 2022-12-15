@@ -19,6 +19,11 @@ export const ErrorCodes = {
     description: "Token is too old.",
     apiStatus: 401,
   },
+  "40103": {
+    name: "JsonWebTokenError",
+    description: "Token could not be verified.",
+    apiStatus: 401,
+  },
   "66601": {
     name: "CastleConfigError",
     description: "Bad configuration of the castle system.",
