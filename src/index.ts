@@ -306,14 +306,16 @@ export type LoginResult =
 
 export type VerifyTokenResult =
   | {
-      user: string;
+      username: string;
+      roles: string[];
       expiresAtMs: number;
       expiresAtDisplay: string;
       error?: never;
       errorCode?: never;
     }
   | {
-      user?: never;
+      username?: never;
+      roles?: never;
       expiresAtMs?: never;
       expiresAtDisplay?: never;
       error: string;
