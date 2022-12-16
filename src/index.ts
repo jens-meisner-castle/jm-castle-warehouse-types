@@ -303,3 +303,19 @@ export type LoginResult =
       username?: never;
       error: string;
     };
+
+export type VerifyTokenResult =
+  | {
+      user: string;
+      expiresAtMs: number;
+      expiresAtDisplay: string;
+      error?: never;
+      errorCode?: never;
+    }
+  | {
+      user?: never;
+      expiresAtMs?: never;
+      expiresAtDisplay?: never;
+      error: string;
+      errorCode: ErrorCode;
+    };
