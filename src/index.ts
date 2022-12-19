@@ -228,6 +228,7 @@ export interface SystemSpec {
     hostCert: string;
     hostKey: string;
   };
+  client?: { path: string };
 }
 
 export interface ImageStoreSpec {
