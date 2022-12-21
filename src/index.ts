@@ -322,3 +322,16 @@ export type VerifyTokenResult =
       error: string;
       errorCode: ErrorCode;
     };
+
+export interface DbExportData {
+  version: { software: string; db: string };
+  tables: {
+    article: { rows: Row_Article[] };
+    store: { rows: Row_Store[] };
+    storeSection: { rows: Row_StoreSection[] };
+    receipt: { rows: Row_Receipt[] };
+    emission: { rows: Row_Emission[] };
+    imageReference: { rows: Row_ImageReference[] };
+    imageContent: { rows: Row_ImageContent[] };
+  };
+}
