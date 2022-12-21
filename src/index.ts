@@ -292,7 +292,7 @@ export type LoginResult =
       token: string;
       expiresAtMs: number;
       expiresAtDisplay: string;
-      roles: string[];
+      roles: UserRole[];
       username: string;
       error?: never;
     }
@@ -308,7 +308,7 @@ export type LoginResult =
 export type VerifyTokenResult =
   | {
       username: string;
-      roles: string[];
+      roles: UserRole[];
       expiresAtMs: number;
       expiresAtDisplay: string;
       error?: never;
