@@ -49,6 +49,8 @@ export const UnknownErrorCode = "-1";
 export const BadRequestMissingParameterCode = "40001";
 export const TokenUndefinedErrorCode = "40101";
 export const TokenExpiredErrorCode = "40102";
+// name is scoming from jsonwebtoken library
+export const JsonWebTokenError = "40103";
 export const CastleConfigErrorCode = "66601";
 export const DevErrorCode = "77701";
 export const SqlDataErrorCode = "88801";
