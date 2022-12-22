@@ -14,6 +14,7 @@ import {
   ErrorCodes,
   getApiStatus,
   getErrorCode,
+  JsonWebTokenError,
   NameToCodeMap,
   SqlDataErrorCode,
   TokenExpiredErrorCode,
@@ -44,6 +45,7 @@ export {
   UnknownErrorCode,
   TokenUndefinedErrorCode,
   TokenExpiredErrorCode,
+  JsonWebTokenError,
   CastleConfigErrorCode,
   SqlDataErrorCode,
 };
