@@ -1,4 +1,16 @@
-import { InsertResponse, SelectResponse, UpdateResponse } from "./Response.mjs";
+import {
+  BatchResponse,
+  InsertResponse,
+  SelectResponse,
+  UpdateResponse,
+} from "./Response.mjs";
 import { Table, TableStatus } from "./Table.js";
 
-export { Table, TableStatus, InsertResponse, SelectResponse, UpdateResponse };
+export {
+  Table,
+  TableStatus,
+  InsertResponse,
+  SelectResponse,
+  UpdateResponse,
+  BatchResponse,
+};

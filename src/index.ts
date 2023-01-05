@@ -1,5 +1,6 @@
 import { ApiServiceResponse } from "./api/index.mjs";
 import {
+  BatchResponse,
   InsertResponse,
   SelectResponse,
   Table,
@@ -56,6 +57,7 @@ export {
   InsertResponse,
   SelectResponse,
   UpdateResponse,
+  BatchResponse,
 };
 export { ApiServiceResponse };
 export {

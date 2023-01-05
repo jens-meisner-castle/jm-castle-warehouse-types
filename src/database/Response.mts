@@ -41,3 +41,17 @@ export type SelectResponse<R> =
       errorCode?: ErrorCode;
       errorDetails?: Record<string, unknown>;
     };
+
+export type BatchResponse =
+  | {
+      result: { cmds: string[] };
+      error?: never;
+      errorCode?: never;
+      errorDetails?: never;
+    }
+  | {
+      result?: never;
+      error: string;
+      errorCode?: ErrorCode;
+      errorDetails?: Record<string, unknown>;
+    };
