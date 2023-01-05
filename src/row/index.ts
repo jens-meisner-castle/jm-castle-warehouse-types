@@ -24,19 +24,21 @@ export interface Row_ImageContent extends Row_Masterdata {
 export interface Row_Store extends Row_Masterdata {
   store_id: string;
   name: string;
+  image_refs: string | null;
 }
 
 export interface Row_StoreSection extends Row_Masterdata {
   store_id: string;
   section_id: string;
   name: string;
+  image_refs: string | null;
 }
 
 export interface Row_Article extends Row_Masterdata {
   article_id: string;
   name: string;
   count_unit: CountUnit;
-  article_img_ref: string | null;
+  image_refs: string | null;
 }
 
 export type EmployeeId = string;
