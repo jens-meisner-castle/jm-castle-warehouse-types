@@ -41,6 +41,11 @@ export interface Row_Article extends Row_Masterdata {
   image_refs: string | null;
 }
 
+export interface Row_Hashtag extends Row_Masterdata {
+  tag_id: string;
+  name: string;
+}
+
 export type EmployeeId = string;
 
 export interface Row_Receipt {

@@ -27,6 +27,7 @@ import {
   PersistentRow,
   Row_Article,
   Row_Emission,
+  Row_Hashtag,
   Row_ImageContent,
   Row_ImageReference,
   Row_Masterdata,
@@ -72,6 +73,7 @@ export {
   Row_Emission,
   Row_Receipt,
   Row_Masterdata,
+  Row_Hashtag,
 };
 
 export type AnyDate = Date;
