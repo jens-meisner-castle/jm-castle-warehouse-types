@@ -334,6 +334,7 @@ export type VerifyTokenResult =
 export interface DbExportData {
   version: { software: string; db: string };
   tables: {
+    hashtag: { rows: Row_Hashtag[] };
     article: { rows: Row_Article[] };
     store: { rows: Row_Store[] };
     storeSection: { rows: Row_StoreSection[] };
