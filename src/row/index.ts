@@ -37,6 +37,7 @@ export interface Row_StoreSection extends Row_Masterdata {
 export interface Row_Article extends Row_Masterdata {
   article_id: string;
   name: string;
+  hashtags: string | null;
   count_unit: CountUnit;
   image_refs: string | null;
 }
