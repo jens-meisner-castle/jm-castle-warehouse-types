@@ -38,6 +38,7 @@ export interface Row_Article extends Row_Masterdata {
   article_id: string;
   name: string;
   hashtags: string | null;
+  www_link: string | null;
   count_unit: CountUnit;
   image_refs: string | null;
 }
@@ -54,6 +55,9 @@ export interface Row_Receipt {
   section_id: string;
   article_id: string;
   article_count: number;
+  www_link: string | null;
+  guaranty_to: number | null;
+  image_refs: string | null;
   by_user: EmployeeId;
   at_seconds: number;
 }
