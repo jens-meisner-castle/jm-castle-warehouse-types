@@ -59,7 +59,7 @@ export interface Row_Receipt {
   guaranty_to: number | null;
   image_refs: string | null;
   by_user: EmployeeId;
-  at_seconds: number;
+  receipt_at: number;
 }
 
 export interface Row_Emission {
@@ -68,5 +68,5 @@ export interface Row_Emission {
   article_id: string;
   article_count: number;
   by_user: EmployeeId;
-  at_seconds: number;
+  emitted_at: number;
 }
