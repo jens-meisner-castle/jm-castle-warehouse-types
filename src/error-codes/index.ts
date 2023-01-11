@@ -1,4 +1,5 @@
 import {
+  BadRequestBadParameterCode,
   BadRequestMissingParameterCode,
   CastleConfigErrorCode,
   DevErrorCode,
@@ -16,6 +17,7 @@ import {
 
 export {
   BadRequestMissingParameterCode,
+  BadRequestBadParameterCode,
   ErrorCode,
   ErrorCodes,
   NameToCodeMap,
