@@ -1,3 +1,17 @@
+/**
+ * Explizit referenzierte Fehler
+ */
+export const UnknownErrorCode = "-1";
+export const BadRequestMissingParameterCode = "40001";
+export const BadRequestBadParameterCode = "40002";
+export const TokenUndefinedErrorCode = "40101";
+export const TokenExpiredErrorCode = "40102";
+// name is scoming from jsonwebtoken library
+export const JsonWebTokenError = "40103";
+export const CastleConfigErrorCode = "66601";
+export const DevErrorCode = "77701";
+export const SqlDataErrorCode = "88801";
+
 export const ErrorCodes = {
   "-1": {
     name: "UnknownError",
@@ -7,6 +21,11 @@ export const ErrorCodes = {
   "40001": {
     name: "BadRequestMissingParameter",
     description: "One or more needed parameters are undefined.",
+    apiStatus: 400,
+  },
+  "40002": {
+    name: "BadRequestBadParameter",
+    description: "One or more parameters are not correct.",
     apiStatus: 400,
   },
   "40101": {
@@ -41,19 +60,6 @@ export const ErrorCodes = {
     apiStatus: 500,
   },
 };
-
-/**
- * Explizit referenzierte Fehler
- */
-export const UnknownErrorCode = "-1";
-export const BadRequestMissingParameterCode = "40001";
-export const TokenUndefinedErrorCode = "40101";
-export const TokenExpiredErrorCode = "40102";
-// name is scoming from jsonwebtoken library
-export const JsonWebTokenError = "40103";
-export const CastleConfigErrorCode = "66601";
-export const DevErrorCode = "77701";
-export const SqlDataErrorCode = "88801";
 
 export type ErrorCode = keyof typeof ErrorCodes;
 

@@ -35,7 +35,7 @@ import {
   Row_Store,
   Row_StoreSection,
 } from "./row/index.js";
-import { SystemSetupStatus } from "./system/index.js";
+import { ArticleStockState, SystemSetupStatus } from "./system/index.js";
 
 export {
   BadRequestMissingParameterCode,
@@ -52,10 +52,10 @@ export {
   CastleConfigErrorCode,
   SqlDataErrorCode,
 };
+export { SystemSetupStatus, ArticleStockState };
 export {
   Table,
   TableStatus,
-  SystemSetupStatus,
   InsertResponse,
   SelectResponse,
   UpdateResponse,
