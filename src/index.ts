@@ -43,6 +43,7 @@ import {
   Row_Masterdata,
   Row_Receipt,
   Row_ReceiptRequest,
+  Row_Receiver,
   Row_Store,
   Row_StoreSection,
 } from "./row/index.js";
@@ -84,6 +85,7 @@ export {
   Row_Article,
   Row_Emission,
   Row_Receipt,
+  Row_Receiver,
   Row_Masterdata,
   Row_Hashtag,
   Row_EmissionRequest,
