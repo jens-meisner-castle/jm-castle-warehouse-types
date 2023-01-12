@@ -66,7 +66,6 @@ export const EmissionReasons = {
   sale: { name: "Verkauf" },
   loan: { name: "Ausleihe" },
   broken: { name: "Kaputt" },
-  reservation: { name: "Reservierung" },
 };
 
 export const ReceiptRequestReasons = {
