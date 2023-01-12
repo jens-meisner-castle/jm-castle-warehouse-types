@@ -25,7 +25,9 @@ import {
   UnknownErrorCode,
 } from "./error-codes/index.js";
 import {
+  EmissionReasons,
   PersistentRow,
+  ReceiptReasons,
   Row_Article,
   Row_Emission,
   Row_Hashtag,
@@ -76,6 +78,8 @@ export {
   Row_Receipt,
   Row_Masterdata,
   Row_Hashtag,
+  ReceiptReasons,
+  EmissionReasons,
 };
 
 export type AnyDate = Date;
