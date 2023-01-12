@@ -103,7 +103,7 @@ export interface Row_Emission {
 
 export interface Row_ReceiptRequest {
   dataset_id: number | "new";
-  store_id: string;
+  section_id: string;
   article_id: string;
   article_count: number;
   www_link: string | null;
