@@ -25,16 +25,24 @@ import {
   UnknownErrorCode,
 } from "./error-codes/index.js";
 import {
+  EmissionReason,
   EmissionReasons,
+  EmissionRequestReason,
+  EmissionRequestReasons,
   PersistentRow,
+  ReceiptReason,
   ReceiptReasons,
+  ReceiptRequestReason,
+  ReceiptRequestReasons,
   Row_Article,
   Row_Emission,
+  Row_EmissionRequest,
   Row_Hashtag,
   Row_ImageContent,
   Row_ImageReference,
   Row_Masterdata,
   Row_Receipt,
+  Row_ReceiptRequest,
   Row_Store,
   Row_StoreSection,
 } from "./row/index.js";
@@ -78,8 +86,16 @@ export {
   Row_Receipt,
   Row_Masterdata,
   Row_Hashtag,
-  ReceiptReasons,
+  Row_EmissionRequest,
+  Row_ReceiptRequest,
   EmissionReasons,
+  EmissionRequestReasons,
+  EmissionReason,
+  EmissionRequestReason,
+  ReceiptReasons,
+  ReceiptReason,
+  ReceiptRequestReason,
+  ReceiptRequestReasons,
 };
 
 export type AnyDate = Date;

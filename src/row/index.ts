@@ -60,8 +60,24 @@ export const EmissionReasons = {
   sale: { name: "Verkauf" },
   loan: { name: "Ausleihe" },
   broken: { name: "Kaputt" },
+  reservation: { name: "Reservierung" },
 };
 
+export const ReceiptRequestReasons = {
+  order: { name: "Bestellung" },
+};
+
+export const EmissionRequestReasons = {
+  reservation: { name: "Reservierung" },
+};
+
+export type EmissionReason = keyof typeof EmissionReasons;
+
+export type ReceiptReason = keyof typeof ReceiptReasons;
+
+export type EmissionRequestReason = keyof typeof EmissionRequestReasons;
+
+export type ReceiptRequestReason = keyof typeof ReceiptRequestReasons;
 export interface Row_Receipt {
   dataset_id: number | "new";
   section_id: string;
@@ -72,7 +88,7 @@ export interface Row_Receipt {
   image_refs: string | null;
   by_user: EmployeeId;
   receipt_at: number;
-  reason: keyof typeof ReceiptReasons;
+  reason: ReceiptReason;
 }
 
 export interface Row_Emission {
@@ -82,5 +98,28 @@ export interface Row_Emission {
   article_count: number;
   by_user: EmployeeId;
   emitted_at: number;
-  reason: keyof typeof EmissionReasons;
+  reason: EmissionReason;
+}
+
+export interface Row_ReceiptRequest {
+  dataset_id: number | "new";
+  store_id: string;
+  article_id: string;
+  article_count: number;
+  www_link: string | null;
+  guaranty_to: number | null;
+  image_refs: string | null;
+  by_user: EmployeeId;
+  requested_at: number;
+  reason: ReceiptRequestReason;
+}
+
+export interface Row_EmissionRequest {
+  dataset_id: number | "new";
+  section_id: string;
+  article_id: string;
+  article_count: number;
+  by_user: EmployeeId;
+  requested_at: number;
+  reason: EmissionRequestReason;
 }
