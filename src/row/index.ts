@@ -48,6 +48,12 @@ export interface Row_Hashtag extends Row_Masterdata {
   name: string;
 }
 
+export interface Row_Receiver extends Row_Masterdata {
+  receiver_id: string;
+  name: string;
+  mail_address: string;
+}
+
 export type EmployeeId = string;
 
 export const ReceiptReasons = {
@@ -99,6 +105,7 @@ export interface Row_Emission {
   by_user: EmployeeId;
   emitted_at: number;
   reason: EmissionReason;
+  receiver: string;
 }
 
 export interface Row_ReceiptRequest {
@@ -112,6 +119,7 @@ export interface Row_ReceiptRequest {
   by_user: EmployeeId;
   requested_at: number;
   reason: ReceiptRequestReason;
+  receiver: string;
 }
 
 export interface Row_EmissionRequest {
@@ -122,4 +130,5 @@ export interface Row_EmissionRequest {
   by_user: EmployeeId;
   requested_at: number;
   reason: EmissionRequestReason;
+  receiver: string;
 }
