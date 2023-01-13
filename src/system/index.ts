@@ -1,4 +1,13 @@
 import { SystemSetupStatus } from "./Setup.js";
-import { ArticleStockState, SectionStockState } from "./Stock.js";
+import {
+  ArticleStockState,
+  SectionStockState,
+  StockStateCounts,
+} from "./Stock.js";
 
-export { SystemSetupStatus, ArticleStockState, SectionStockState };
+export {
+  SystemSetupStatus,
+  ArticleStockState,
+  SectionStockState,
+  StockStateCounts,
+};

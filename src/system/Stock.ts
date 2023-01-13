@@ -1,19 +1,23 @@
 import { Row_Article, Row_StoreSection } from "../row";
 
-export interface ArticleStockState {
-  article: Row_Article;
-  states: {
-    section: Row_StoreSection;
-    physicalCount: number;
-    availableCount: number;
-  }[];
+export interface StockStateCounts {
+  physicalCount: number;
+  availableCount: number;
 }
 
+export interface ArticleStockState {
+  article: Row_Article;
+  states: Array<
+    {
+      section: Row_StoreSection;
+    } & StockStateCounts
+  >;
+}
 export interface SectionStockState {
   section: Row_StoreSection;
-  states: {
-    article: Row_Article;
-    physicalCount: number;
-    availableCount: number;
-  }[];
+  states: Array<
+    {
+      article: Row_Article;
+    } & StockStateCounts
+  >;
 }

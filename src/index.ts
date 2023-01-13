@@ -50,6 +50,7 @@ import {
 import {
   ArticleStockState,
   SectionStockState,
+  StockStateCounts,
   SystemSetupStatus,
 } from "./system/index.js";
 
@@ -69,7 +70,12 @@ export {
   CastleConfigErrorCode,
   SqlDataErrorCode,
 };
-export { SystemSetupStatus, ArticleStockState, SectionStockState };
+export {
+  SystemSetupStatus,
+  ArticleStockState,
+  SectionStockState,
+  StockStateCounts,
+};
 export {
   Table,
   TableStatus,
