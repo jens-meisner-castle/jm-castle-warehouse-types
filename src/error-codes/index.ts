@@ -12,6 +12,7 @@ import {
   SqlDataErrorCode,
   TokenExpiredErrorCode,
   TokenUndefinedErrorCode,
+  UnknownClientOrBadIpCode,
   UnknownErrorCode,
 } from "./Error.mjs";
 
@@ -25,6 +26,7 @@ export {
   getApiStatus,
   DevErrorCode,
   UnknownErrorCode,
+  UnknownClientOrBadIpCode,
   TokenUndefinedErrorCode,
   TokenExpiredErrorCode,
   JsonWebTokenError,

@@ -6,8 +6,9 @@ export const BadRequestMissingParameterCode = "40001";
 export const BadRequestBadParameterCode = "40002";
 export const TokenUndefinedErrorCode = "40101";
 export const TokenExpiredErrorCode = "40102";
-// name is scoming from jsonwebtoken library
+// name is coming from jsonwebtoken library
 export const JsonWebTokenError = "40103";
+export const UnknownClientOrBadIpCode = "40104";
 export const CastleConfigErrorCode = "66601";
 export const DevErrorCode = "77701";
 export const SqlDataErrorCode = "88801";
@@ -41,6 +42,11 @@ export const ErrorCodes = {
   "40103": {
     name: "JsonWebTokenError",
     description: "Token could not be verified.",
+    apiStatus: 401,
+  },
+  "40104": {
+    name: "UnknownClientOrBadIpError",
+    description: "Client is unknown or running on not authorized ip.",
     apiStatus: 401,
   },
   "66601": {

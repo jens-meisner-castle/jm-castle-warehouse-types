@@ -22,6 +22,7 @@ import {
   SqlDataErrorCode,
   TokenExpiredErrorCode,
   TokenUndefinedErrorCode,
+  UnknownClientOrBadIpCode,
   UnknownErrorCode,
 } from "./error-codes/index.js";
 import {
@@ -64,6 +65,7 @@ export {
   getApiStatus,
   DevErrorCode,
   UnknownErrorCode,
+  UnknownClientOrBadIpCode,
   TokenUndefinedErrorCode,
   TokenExpiredErrorCode,
   JsonWebTokenError,
