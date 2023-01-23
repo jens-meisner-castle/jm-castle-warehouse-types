@@ -306,7 +306,15 @@ export interface UserSettings {
   roles: UserRole[];
 }
 
+export interface ClientSettings {
+  id: string;
+  ip: string;
+  user: string;
+}
+
 export type DefaultUserSpec = Record<string, UserSettings>;
+
+export type DefaultClientSpec = Record<string, ClientSettings>;
 
 export interface Configuration {
   system: SystemSpec;
