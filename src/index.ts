@@ -319,6 +319,7 @@ export type DefaultClientSpec = Record<string, ClientSettings>;
 export interface Configuration {
   system: SystemSpec;
   user?: DefaultUserSpec;
+  client?: DefaultClientSpec;
   persistence: Record<string, PersistenceSpec>;
   mail: Record<string, MailingSpec>;
   imageStore: FilesystemStoreSpec & ImageStoreSpec;
