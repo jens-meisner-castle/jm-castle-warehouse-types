@@ -1,10 +1,11 @@
 export interface ColumnStatus {
   name: string;
   type: string;
+  autoIncrement?: boolean;
 }
 export interface Table {
   id: string;
-  columnsFragment: string;
+  primaryKey: string;
   columns: ColumnStatus[];
 }
 
