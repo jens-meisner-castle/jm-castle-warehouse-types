@@ -136,8 +136,17 @@ export interface CreateTablesResponse {
   result: Record<string, unknown>;
 }
 
+export interface AlterTablesResponse {
+  cmds: string[];
+  result: Record<string, unknown>;
+}
+
 export interface ExecuteSetupResponse {
-  setup: { createDb: CreateDbResponse; createTables: CreateTablesResponse };
+  setup: {
+    createDb: CreateDbResponse;
+    createTables: CreateTablesResponse;
+    alterTables: AlterTablesResponse;
+  };
 }
 
 export const ValueTypes = {
