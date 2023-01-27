@@ -60,12 +60,14 @@ export const ReceiptReasons = {
   buy: { name: "Einkauf" },
   loanEnd: { name: "Leihende" },
   build: { name: "Eigenbau" },
+  shift: { name: "Umgelagert" },
 };
 
 export const EmissionReasons = {
   sale: { name: "Verkauf" },
   loan: { name: "Ausleihe" },
   broken: { name: "Kaputt" },
+  shift: { name: "Umgelagert" },
 };
 
 export const ReceiptRequestReasons = {

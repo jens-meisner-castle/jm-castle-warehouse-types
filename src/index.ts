@@ -310,7 +310,7 @@ export interface UserSettings {
 
 export interface ClientSettings {
   id: string;
-  ip: string;
+  ip: string[];
   user: string;
 }
 
