@@ -30,6 +30,7 @@ export interface Row_Store extends Row_Masterdata {
 export interface Row_StoreSection extends Row_Masterdata {
   store_id: string;
   section_id: string;
+  short_id: string;
   name: string;
   image_refs: string | null;
 }
