@@ -5,7 +5,7 @@ export interface ColumnStatus {
 export interface Table {
   id: string;
   columnsFragment: string;
-  columns: ColumnStatus;
+  columns: ColumnStatus[];
 }
 
 export interface TableStatus {
