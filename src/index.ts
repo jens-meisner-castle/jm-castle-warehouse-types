@@ -1,6 +1,7 @@
 import { ApiServiceResponse } from "./api/index.mjs";
 import {
   BatchResponse,
+  ColumnStatus,
   DeleteResponse,
   InsertResponse,
   SelectResponse,
@@ -79,6 +80,7 @@ export {
   StockStateCounts,
 };
 export {
+  ColumnStatus,
   Table,
   TableStatus,
   InsertResponse,

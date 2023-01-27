@@ -5,9 +5,10 @@ import {
   SelectResponse,
   UpdateResponse,
 } from "./Response.mjs";
-import { Table, TableStatus } from "./Table.js";
+import { ColumnStatus, Table, TableStatus } from "./Table.js";
 
 export {
+  ColumnStatus,
   Table,
   TableStatus,
   InsertResponse,
