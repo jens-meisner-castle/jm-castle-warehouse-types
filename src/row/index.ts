@@ -38,6 +38,7 @@ export interface Row_StoreSection extends Row_Masterdata {
 export interface Row_Article extends Row_Masterdata {
   article_id: string;
   name: string;
+  manufacturer: string;
   hashtags: string | null;
   www_link: string | null;
   count_unit: CountUnit;
@@ -53,6 +54,11 @@ export interface Row_Receiver extends Row_Masterdata {
   receiver_id: string;
   name: string;
   mail_address: string;
+}
+
+export interface Row_Manufacturer extends Row_Masterdata {
+  manufacturer_id: string;
+  name: string;
 }
 
 export interface Row_Costunit extends Row_Masterdata {
