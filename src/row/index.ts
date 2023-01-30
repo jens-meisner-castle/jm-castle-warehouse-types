@@ -97,6 +97,8 @@ export interface Row_Receipt {
   by_user: EmployeeId;
   receipt_at: number;
   reason: ReceiptReason;
+  price: number | null;
+  cost_unit: string;
 }
 
 export interface Row_Emission {
@@ -108,6 +110,9 @@ export interface Row_Emission {
   emitted_at: number;
   reason: EmissionReason;
   receiver: string;
+  price: number | null;
+  cost_unit: string;
+  image_refs: string | null;
 }
 
 export interface Row_ReceiptRequest {
