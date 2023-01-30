@@ -55,6 +55,11 @@ export interface Row_Receiver extends Row_Masterdata {
   mail_address: string;
 }
 
+export interface Row_Costunit extends Row_Masterdata {
+  unit_id: string;
+  name: string;
+}
+
 export type EmployeeId = string;
 
 export const ReceiptReasons = {
