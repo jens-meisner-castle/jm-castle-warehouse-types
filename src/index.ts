@@ -3,6 +3,7 @@ import {
   BatchResponse,
   ColumnStatus,
   DeleteResponse,
+  FindResponse,
   InsertResponse,
   SelectResponse,
   Table,
@@ -90,6 +91,7 @@ export {
   UpdateResponse,
   BatchResponse,
   DeleteResponse,
+  FindResponse,
 };
 export { ApiServiceResponse };
 export {

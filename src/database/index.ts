@@ -1,6 +1,7 @@
 import {
   BatchResponse,
   DeleteResponse,
+  FindResponse,
   InsertResponse,
   SelectResponse,
   UpdateResponse,
@@ -16,4 +17,5 @@ export {
   UpdateResponse,
   BatchResponse,
   DeleteResponse,
+  FindResponse,
 };

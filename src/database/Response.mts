@@ -42,6 +42,20 @@ export type SelectResponse<R> =
       errorDetails?: Record<string, unknown>;
     };
 
+export type FindResponse<R> =
+  | {
+      result: { cmd: string; row: R | undefined };
+      error?: never;
+      errorCode?: never;
+      errorDetails?: never;
+    }
+  | {
+      result?: never;
+      error: string;
+      errorCode?: ErrorCode;
+      errorDetails?: Record<string, unknown>;
+    };
+
 export type DeleteResponse =
   | {
       result: { cmd: string; affectedRows: number };
