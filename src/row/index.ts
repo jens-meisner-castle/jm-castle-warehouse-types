@@ -73,6 +73,7 @@ export const ReceiptReasons = {
   loanEnd: { name: "Leihende" },
   build: { name: "Eigenbau" },
   shift: { name: "Umgelagert" },
+  inventory: { name: "Inventur" },
 };
 
 export const EmissionReasons = {
@@ -80,6 +81,7 @@ export const EmissionReasons = {
   loan: { name: "Ausleihe" },
   broken: { name: "Kaputt" },
   shift: { name: "Umgelagert" },
+  inventory: { name: "Inventur" },
 };
 
 export const ReceiptRequestReasons = {
