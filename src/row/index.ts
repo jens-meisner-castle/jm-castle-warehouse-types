@@ -1,4 +1,5 @@
-import { CountUnit } from "..";
+import { ValueType, ValueUnit } from "jm-castle-types";
+import { CountUnit } from "../index.js";
 
 export type PersistentRow = Record<string, unknown>;
 
@@ -44,6 +45,12 @@ export interface Row_Article extends Row_Masterdata {
   count_unit: CountUnit;
   image_refs: string | null;
   attributes: string | null;
+}
+
+export interface Row_Attribute extends Row_Masterdata {
+  attribute_id: string;
+  value_type: ValueType;
+  value_unit: ValueUnit | null;
 }
 
 export interface Row_Hashtag extends Row_Masterdata {
