@@ -1,4 +1,4 @@
-import { ErrorCode } from "../error-codes";
+import { ErrorCode } from "../error-codes/index.js";
 
 export type ApiServiceResponse<T> =
   | {

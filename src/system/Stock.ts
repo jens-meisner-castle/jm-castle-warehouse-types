@@ -1,4 +1,4 @@
-import { Row_Article, Row_StoreSection } from "../row";
+import { Row_Article, Row_StoreSection } from "../row/index.js";
 
 export interface StockStateCounts {
   physicalCount: number;

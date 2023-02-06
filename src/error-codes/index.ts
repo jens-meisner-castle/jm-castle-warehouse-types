@@ -14,7 +14,7 @@ import {
   TokenUndefinedErrorCode,
   UnknownClientOrBadIpCode,
   UnknownErrorCode,
-} from "./Error.mjs";
+} from "./Error.js";
 
 export {
   BadRequestMissingParameterCode,

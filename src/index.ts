@@ -1,4 +1,4 @@
-import { ApiServiceResponse } from "./api/index.mjs";
+import { ApiServiceResponse } from "./api/index.js";
 import {
   BatchResponse,
   ColumnStatus,
