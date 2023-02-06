@@ -43,6 +43,7 @@ export interface Row_Article extends Row_Masterdata {
   www_link: string | null;
   count_unit: CountUnit;
   image_refs: string | null;
+  attributes: string | null;
 }
 
 export interface Row_Hashtag extends Row_Masterdata {
