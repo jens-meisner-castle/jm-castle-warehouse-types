@@ -49,6 +49,7 @@ export interface Row_Article extends Row_Masterdata {
 
 export interface Row_Attribute extends Row_Masterdata {
   attribute_id: string;
+  name: string;
   value_type: ValueType;
   value_unit: ValueUnit | null;
 }
