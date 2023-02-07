@@ -47,6 +47,8 @@ export interface Row_Article extends Row_Masterdata {
   attributes: string | null;
 }
 
+export type AttributeValue = number | string | boolean | null | undefined;
+
 export interface Row_Attribute extends Row_Masterdata {
   attribute_id: string;
   name: string;

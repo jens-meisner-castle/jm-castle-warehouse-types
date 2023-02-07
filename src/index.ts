@@ -28,6 +28,7 @@ import {
   UnknownErrorCode,
 } from "./error-codes/index.js";
 import {
+  AttributeValue,
   EmissionReason,
   EmissionReasons,
   EmissionRequestReason,
@@ -96,6 +97,7 @@ export {
 };
 export { ApiServiceResponse };
 export {
+  AttributeValue,
   PersistentRow,
   Row_ImageReference,
   Row_ImageContent,
