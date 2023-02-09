@@ -1,5 +1,6 @@
 import { ApiServiceResponse } from "./api/index.js";
 import {
+  AllTableNames,
   BatchResponse,
   ColumnStatus,
   DeleteResponse,
@@ -7,6 +8,7 @@ import {
   InsertResponse,
   SelectResponse,
   Table,
+  TableName,
   TableStatus,
   UpdateResponse,
 } from "./database/index.js";
@@ -94,6 +96,8 @@ export {
   BatchResponse,
   DeleteResponse,
   FindResponse,
+  AllTableNames,
+  TableName,
 };
 export { ApiServiceResponse };
 export {

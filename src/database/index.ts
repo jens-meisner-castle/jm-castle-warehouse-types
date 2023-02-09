@@ -6,7 +6,13 @@ import {
   SelectResponse,
   UpdateResponse,
 } from "./Response.js";
-import { ColumnStatus, Table, TableStatus } from "./Table.js";
+import {
+  AllTableNames,
+  ColumnStatus,
+  Table,
+  TableName,
+  TableStatus,
+} from "./Table.js";
 
 export {
   ColumnStatus,
@@ -18,4 +24,6 @@ export {
   BatchResponse,
   DeleteResponse,
   FindResponse,
+  AllTableNames,
+  TableName,
 };
