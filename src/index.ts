@@ -163,19 +163,6 @@ export interface ExecuteSetupResponse {
   };
 }
 
-export const ValueTypes = {
-  number: { id: "number", name: "Eine Zahl" },
-  string: { id: "string", name: "Eine Zeichenfolge" },
-  boolean: {
-    id: "boolean",
-    name: "Wahrheitswert (true oder false bzw. 1 oder 0)",
-  },
-  date: {
-    id: "date",
-    name: "Datum (formatiert als <yyyy-MM-dd HH:mm:ss> oder numerisch als Millisekundenwert)",
-  },
-};
-
 export type LuxonKey = "millisecond" | "second" | "minute" | "hour" | "day";
 
 export const CountUnits = {
@@ -208,11 +195,6 @@ export interface SerializableService {
   scope?: "public" | "private";
   neededRole: string;
 }
-
-export const PersistenceAreas = {
-  store: "Lager",
-  "store-section": "Sektion / Abschnitt in einem Lager",
-};
 
 export interface MailingSMTPSpec {
   type: "smtp";
