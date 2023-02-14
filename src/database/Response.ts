@@ -1,4 +1,4 @@
-import { ErrorCode } from "../error-codes/index.js";
+import { ErrorCode } from "jm-castle-types";
 
 export type InsertResponse<R> =
   | {
