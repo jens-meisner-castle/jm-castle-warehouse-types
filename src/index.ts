@@ -1,17 +1,3 @@
-import { ApiServiceResponse } from "./api/index.js";
-import {
-  AllTableNames,
-  BatchResponse,
-  ColumnStatus,
-  DeleteResponse,
-  FindResponse,
-  InsertResponse,
-  SelectResponse,
-  Table,
-  TableName,
-  TableStatus,
-  UpdateResponse,
-} from "./database/index.js";
 import {
   BadRequestBadParameterCode,
   BadRequestMissingParameterCode,
@@ -28,7 +14,21 @@ import {
   TokenUndefinedErrorCode,
   UnknownClientOrBadIpCode,
   UnknownErrorCode,
-} from "./error-codes/index.js";
+} from "jm-castle-types";
+import { ApiServiceResponse } from "./api/index.js";
+import {
+  AllTableNames,
+  BatchResponse,
+  ColumnStatus,
+  DeleteResponse,
+  FindResponse,
+  InsertResponse,
+  SelectResponse,
+  Table,
+  TableName,
+  TableStatus,
+  UpdateResponse,
+} from "./database/index.js";
 import {
   AttributeValue,
   EmissionReason,
