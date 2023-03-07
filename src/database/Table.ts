@@ -7,6 +7,7 @@ export interface Table {
   id: string;
   primaryKey: string;
   columns: ColumnStatus[];
+  preferredOrderBy?: string[];
 }
 
 export interface TableStatus {
