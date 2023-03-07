@@ -7,7 +7,7 @@ export interface Table {
   id: string;
   primaryKey: string;
   columns: ColumnStatus[];
-  preferredOrderBy?: string[];
+  preferredOrderBy?: { column: string; direction: "ASC" | "DESC" }[];
 }
 
 export interface TableStatus {
