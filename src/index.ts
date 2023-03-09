@@ -282,6 +282,7 @@ export interface Configuration {
   persistence: Record<string, PersistenceSpec>;
   mail: Record<string, MailingSpec>;
   imageStore: FilesystemStoreSpec & ImageStoreSpec;
+  systemBackupStore?: FilesystemStoreSpec;
 }
 
 export interface CheckedConfiguration extends Configuration {
