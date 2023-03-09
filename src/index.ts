@@ -283,6 +283,7 @@ export interface Configuration {
   mail: Record<string, MailingSpec>;
   imageStore: FilesystemStoreSpec & ImageStoreSpec;
   systemBackupStore?: FilesystemStoreSpec;
+  tempStore: FilesystemStoreSpec;
 }
 
 export interface CheckedConfiguration extends Configuration {
