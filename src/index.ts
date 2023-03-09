@@ -348,3 +348,8 @@ export interface DbExportData {
     imageContent: { rows: Row_ImageContent[] };
   };
 }
+
+export interface SystemBackupResponse {
+  version: { software: string; db: string };
+  file: { path: string; sizeInBytes: number };
+}
