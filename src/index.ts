@@ -140,31 +140,6 @@ export type AnyDataValue =
   | null
   | undefined;
 
-export interface CreateDbResponse {
-  cmds: string[];
-  result: Record<string, unknown>;
-}
-
-export interface CreateTablesResponse {
-  cmds: string[];
-  result: Record<string, unknown>;
-}
-
-export interface AlterTablesResponse {
-  cmds: string[];
-  result: Record<string, unknown>;
-}
-
-export interface ExecuteSetupResponse {
-  setup: {
-    createDb: CreateDbResponse;
-    createTables: CreateTablesResponse;
-    alterTables: AlterTablesResponse;
-  };
-}
-
-export type LuxonKey = "millisecond" | "second" | "minute" | "hour" | "day";
-
 export const CountUnits = {
   piece: { id: "piece", name: "Stück", cat: "count" },
   m: { id: "m", name: "Meter", cat: "distance" },
