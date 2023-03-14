@@ -57,7 +57,6 @@ import {
   ArticleStockState,
   SectionStockState,
   StockStateCounts,
-  SystemSetupStatus,
 } from "./system/index.js";
 
 export {
@@ -77,12 +76,7 @@ export {
   CastleConfigErrorCode,
   SqlDataErrorCode,
 };
-export {
-  SystemSetupStatus,
-  ArticleStockState,
-  SectionStockState,
-  StockStateCounts,
-};
+export { ArticleStockState, SectionStockState, StockStateCounts };
 export {
   ColumnStatus,
   Table,
