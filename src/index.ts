@@ -25,7 +25,12 @@ import {
   UpdateResponse,
 } from "jm-castle-types";
 import { ApiServiceResponse } from "./api/index.js";
-import { AllTableNames, TableName } from "./database/index.js";
+import {
+  AllTableNames,
+  DbExportData,
+  TableName,
+  TableRows,
+} from "./database/index.js";
 import {
   AttributeValue,
   EmissionReason,
@@ -87,9 +92,8 @@ export {
   BatchResponse,
   DeleteResponse,
   FindResponse,
-  AllTableNames,
-  TableName,
 };
+export { AllTableNames, TableName, TableRows, DbExportData };
 export { ApiServiceResponse };
 export {
   AttributeValue,
@@ -300,20 +304,6 @@ export type VerifyTokenResult =
       error: string;
       errorCode: ErrorCode;
     };
-
-export interface DbExportData {
-  version: { software: string; db: string };
-  tables: {
-    hashtag: { rows: Row_Hashtag[] };
-    article: { rows: Row_Article[] };
-    store: { rows: Row_Store[] };
-    storeSection: { rows: Row_StoreSection[] };
-    receipt: { rows: Row_Receipt[] };
-    emission: { rows: Row_Emission[] };
-    imageReference: { rows: Row_ImageReference[] };
-    imageContent: { rows: Row_ImageContent[] };
-  };
-}
 
 export interface SystemBackupResponse {
   version: { software: string; db: string };
