@@ -34,3 +34,15 @@ export interface DbExportData {
     emissionRequest: { rows: Row_EmissionRequest[] };
   };
 }
+
+export type DbImportData = {
+  tables: Record<
+    keyof DbExportData["tables"],
+    { inserted: number; updated: number }
+  >;
+};
+
+export interface ImportResult {
+  database: DbImportData;
+  images: { inserted: number; updated: number };
+}
