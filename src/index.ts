@@ -28,6 +28,8 @@ import { ApiServiceResponse } from "./api/index.js";
 import {
   AllTableNames,
   DbExportData,
+  DbImportData,
+  ImportResult,
   TableName,
   TableRows,
 } from "./database/index.js";
@@ -93,7 +95,14 @@ export {
   DeleteResponse,
   FindResponse,
 };
-export { AllTableNames, TableName, TableRows, DbExportData };
+export {
+  AllTableNames,
+  TableName,
+  TableRows,
+  DbExportData,
+  DbImportData,
+  ImportResult,
+};
 export { ApiServiceResponse };
 export {
   AttributeValue,
