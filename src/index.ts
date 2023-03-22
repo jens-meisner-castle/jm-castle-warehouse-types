@@ -24,7 +24,6 @@ import {
   UnknownErrorCode,
   UpdateResponse,
 } from "jm-castle-types";
-import { ApiServiceResponse } from "./api/index.js";
 import {
   AllTableNames,
   DbExportData,
@@ -103,7 +102,6 @@ export {
   DbImportData,
   ImportResult,
 };
-export { ApiServiceResponse };
 export {
   AttributeValue,
   PersistentRow,
